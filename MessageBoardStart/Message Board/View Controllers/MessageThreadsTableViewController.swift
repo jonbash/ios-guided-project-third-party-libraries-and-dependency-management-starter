@@ -60,8 +60,10 @@ class MessageThreadsTableViewController: UITableViewController {
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ViewMessageThread" {
-            guard let indexPath = tableView.indexPathForSelectedRow,
-                let destinationVC = segue.destination as? MessageThreadDetailTableViewController else { return }
+            guard
+                let indexPath = tableView.indexPathForSelectedRow,
+                let destinationVC = segue.destination as? MessageThreadViewController
+                else { return }
             
             destinationVC.messageThreadController = messageThreadController
             destinationVC.messageThread = messageThreadController.messageThreads[indexPath.row]

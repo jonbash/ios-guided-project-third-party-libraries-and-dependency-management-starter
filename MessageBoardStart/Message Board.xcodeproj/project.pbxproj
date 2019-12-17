@@ -15,12 +15,11 @@
 		4612B5DC211AB6C500E7FF73 /* MessageThreadController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4612B5DB211AB6C500E7FF73 /* MessageThreadController.swift */; };
 		4643602A211AB90900E7FF73 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46436029211AB90900E7FF73 /* HTTPMethod.swift */; };
 		46436030211ABC3700E7FF73 /* MessageThreadsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4643602F211ABC3700E7FF73 /* MessageThreadsTableViewController.swift */; };
-		46436033211ABC5800E7FF73 /* MessageThreadDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46436032211ABC5800E7FF73 /* MessageThreadDetailTableViewController.swift */; };
-		46436035211ABC6B00E7FF73 /* MessageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46436034211ABC6B00E7FF73 /* MessageDetailViewController.swift */; };
 		994AD9DB23A9499000C6F012 /* InputBarAccessoryView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 994AD9DA23A9499000C6F012 /* InputBarAccessoryView.framework */; };
 		994AD9DC23A9499000C6F012 /* InputBarAccessoryView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 994AD9DA23A9499000C6F012 /* InputBarAccessoryView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		994AD9DF23A9499300C6F012 /* MessageKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 994AD9DE23A9499300C6F012 /* MessageKit.framework */; };
 		994AD9E023A9499300C6F012 /* MessageKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 994AD9DE23A9499300C6F012 /* MessageKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		994AD9E323A954E400C6F012 /* MessageThreadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994AD9E223A954E400C6F012 /* MessageThreadViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -49,10 +48,9 @@
 		4612B5DB211AB6C500E7FF73 /* MessageThreadController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageThreadController.swift; sourceTree = "<group>"; };
 		46436029211AB90900E7FF73 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		4643602F211ABC3700E7FF73 /* MessageThreadsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageThreadsTableViewController.swift; sourceTree = "<group>"; };
-		46436032211ABC5800E7FF73 /* MessageThreadDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageThreadDetailTableViewController.swift; sourceTree = "<group>"; };
-		46436034211ABC6B00E7FF73 /* MessageDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDetailViewController.swift; sourceTree = "<group>"; };
 		994AD9DA23A9499000C6F012 /* InputBarAccessoryView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InputBarAccessoryView.framework; path = Carthage/Build/iOS/InputBarAccessoryView.framework; sourceTree = "<group>"; };
 		994AD9DE23A9499300C6F012 /* MessageKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageKit.framework; path = Carthage/Build/iOS/MessageKit.framework; sourceTree = "<group>"; };
+		994AD9E223A954E400C6F012 /* MessageThreadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageThreadViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,8 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				4643602F211ABC3700E7FF73 /* MessageThreadsTableViewController.swift */,
-				46436032211ABC5800E7FF73 /* MessageThreadDetailTableViewController.swift */,
-				46436034211ABC6B00E7FF73 /* MessageDetailViewController.swift */,
+				994AD9E223A954E400C6F012 /* MessageThreadViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -252,10 +249,9 @@
 			files = (
 				4612B5DC211AB6C500E7FF73 /* MessageThreadController.swift in Sources */,
 				4612B5DA211AB66600E7FF73 /* MessageThread.swift in Sources */,
+				994AD9E323A954E400C6F012 /* MessageThreadViewController.swift in Sources */,
 				4643602A211AB90900E7FF73 /* HTTPMethod.swift in Sources */,
 				46436030211ABC3700E7FF73 /* MessageThreadsTableViewController.swift in Sources */,
-				46436035211ABC6B00E7FF73 /* MessageDetailViewController.swift in Sources */,
-				46436033211ABC5800E7FF73 /* MessageThreadDetailTableViewController.swift in Sources */,
 				4612B5C8211AB41100E7FF73 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

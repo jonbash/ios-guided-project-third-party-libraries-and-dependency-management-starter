@@ -7,11 +7,14 @@
 //
 
 import Foundation
+import MessageKit
 
 class MessageThreadController {
     
     static let baseURL = URL(string: "https://lambda-message-board.firebaseio.com/withframeworks")!
     var messageThreads: [MessageThread] = []
+    
+    var currentUser: Sender?
 
     func fetchMessageThreads(completion: @escaping () -> Void) {
         
@@ -68,11 +71,15 @@ class MessageThreadController {
         }.resume()
     }
     
-    func createMessage(in messageThread: MessageThread, withText text: String, sender: String, completion: @escaping () -> Void) {
+    func createMessage(in messageThread: MessageThread, withText text: String, sender: Sender, completion: @escaping () -> Void) {
         
-        guard let index = messageThreads.firstIndex(of: messageThread) else { completion(); return }
+        guard let index = messageThreads.firstIndex(of: messageThread) else {
+            completion()
+            return
+        }
         
-        let message = MessageThread.Message(text: text, displayName: sender)
+        let message = MessageThread.Message(text: text, sender: sender, timestamp: Date())
+//        let message = MessageThread.Message(text: text, displayName: sender)
         
         messageThreads[index].messages.append(message)
         
